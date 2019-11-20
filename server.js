@@ -15,7 +15,7 @@ notes = [];
 
 app.get('/get-notes',(req,res)=>{
     console.log('get notes api hit')
-    return res.send(notes);
+    return res.json(notes);
 });
 
 app.post('/add-note',(req, res)=>{
